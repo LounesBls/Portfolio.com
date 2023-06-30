@@ -236,6 +236,7 @@ header nav ul li a {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -1px;
+    cursor: pointer;
 }
 
 .face .image img {
@@ -286,6 +287,7 @@ header nav ul li a {
     text-transform: uppercase;
     width: fit-content;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 @media (max-width: 767.8px) {
@@ -462,6 +464,7 @@ header nav ul li a {
     padding: 10px 30px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* End Works */
@@ -469,7 +472,7 @@ header nav ul li a {
 /* Start Contracts */
 .contracts {
     background-color: #fefcfc;
-    padding: 20px var(--SidePadding);
+    padding: 20px 10px;
 }
 
 .contracts .container {
@@ -481,35 +484,19 @@ header nav ul li a {
 
 .contracts .container div {
     position: relative;
-    width: 180px;
 }
 
-@media (min-width: 550px) {
-    .contracts .container div img {
-        width: 180px;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .contracts .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+@media (max-width: 767px) {
     .contracts .container div {
-        width: 100%;
+        text-align: center;
     }
+}
 
-    .contracts .container img {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .contracts .container div:nth-of-type(4) img {
-        height: 100%;
-    }
+.contracts .container div img {
+    width: 180px;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    object-position: center;
 }
 
 .contracts .container div:nth-of-type(4) {
