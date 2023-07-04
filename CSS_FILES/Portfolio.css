@@ -237,6 +237,11 @@ header nav ul li a {
     text-transform: uppercase;
     letter-spacing: -1px;
     cursor: pointer;
+    transition: .3s;
+}
+
+.face .text input[type="submit"]:hover {
+    color: #fff;
 }
 
 .face .image img {
@@ -268,6 +273,7 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4em;
+    cursor: pointer;
 }
 
 @media (max-width: 750px) {
@@ -464,7 +470,12 @@ header nav ul li a {
     padding: 10px 30px;
     font-weight: 700;
     text-transform: uppercase;
-    cursor: pointer;
+    display: block;
+    transition: .3s;
+}
+
+.work .container .btn:hover {
+    color: #fff;
 }
 
 /* End Works */
@@ -843,6 +854,12 @@ header nav ul li a {
     border: none;
     font-weight: 600;
     text-transform: uppercase;
+    color: #000;
+    transition: .3s;
+}
+
+.contact .content .mail .idontity-box form a:hover {
+    color: #fff;
 }
 
 @media (min-width: 768px) {
